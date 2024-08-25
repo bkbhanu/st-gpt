@@ -2,6 +2,19 @@ import streamlit as st
 
 st.set_page_config(layout="wide")
 
+# Custom CSS to adjust layout
+st.markdown("""
+<style>
+.main > div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.stColumn:first-child {
+    padding-left: 0;
+}
+</style>
+""", unsafe_allow_html=True)
+
 st.title('🌱 Welcome to FarmBox')
 st.write('A place where Agri Knowledge and Insights are exchanged!')
 
@@ -40,7 +53,7 @@ with middle_column:
         
         # Here you would typically call your AI model to generate a response
         # For now, we'll just echo the user's input
-        response = f"AI response to: {prompt}"
+        response = f"Your Agri mitra: {prompt}"
         
         with st.chat_message("assistant"):
             st.markdown(response)
