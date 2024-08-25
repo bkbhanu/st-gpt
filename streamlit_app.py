@@ -15,7 +15,7 @@ st.set_page_config(layout="wide")
 
 # Sidebar with collapsible configuration
 with st.sidebar:
-    st.title('FarmBox Config')
+    st.title('Configure your chat')
     
     # Collapsible configuration section
     with st.expander("Configuration", expanded=False):
@@ -25,6 +25,7 @@ with st.sidebar:
 
 # Main area
 st.title('FarmBox Chat Interface')
+st.write("An Agri Knowledge and Insights Hub")
 
 # System message to provide context and rules
 system_message = """
@@ -78,7 +79,7 @@ try:
 
     # Chat Interface
     with chat_column:
-        st.subheader("Chat")
+        st.subheader("Discuss with your agri expert")
         # Initialize chat history
         if "messages" not in st.session_state:
             st.session_state.messages = []
