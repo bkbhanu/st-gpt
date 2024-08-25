@@ -24,7 +24,7 @@ with st.sidebar:
         model = st.selectbox("Model", ["gpt-4o-mini", "gpt-3.5-turbo", "gpt-4"], index=0)  # Set default to gpt-4o-mini
 
 # Main area
-st.title('FarmBox Chat Interface')
+st.title('Farmer Friend - For the farmer, by the farmer')
 st.write("An Agri Knowledge and Insights Hub")
 
 # System message to provide context and rules
