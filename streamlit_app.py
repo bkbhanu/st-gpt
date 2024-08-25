@@ -6,8 +6,8 @@ st.set_page_config(layout="wide")
 st.markdown("""
 <style>
 .main > div {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .stColumn:first-child {
     padding-left: 0;
