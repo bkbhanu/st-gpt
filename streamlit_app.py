@@ -1,5 +1,5 @@
 import streamlit as st
 
-st.title('🎈 App Name')
+st.title('🎈 Welcome to FarmBox')
 
-st.write('Hello world!')
+st.write('A place where Agri Knowledge and Insights are exchanged!')
