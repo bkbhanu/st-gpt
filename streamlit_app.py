@@ -20,7 +20,7 @@ with st.sidebar:
     # Collapsible configuration section
     with st.expander("Configuration", expanded=False):
         temperature = st.slider("Temperature", 0.0, 1.0, 0.0, 0.1)
-        max_tokens = st.number_input("Max Tokens", 250, 350, 500, 1500)
+        # max_tokens = st.number_input("Max Tokens", 250, 350, 500, 1500)
         model = st.selectbox("Model", ["gpt-4o-mini", "gpt-3.5-turbo", "gpt-4"], index=0)  # Set default to gpt-4o-mini
 
 # Main area
